@@ -1,0 +1,71 @@
+
+  .SplitPane {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 95vh;
+  }
+  
+  
+  .SplitPane-left {
+    float: left;
+    width: 40%;
+    text-align: right;
+  }
+  
+  .SplitPane-right {
+    float: left;
+    width: 60%;
+    color: #ffccff;
+    text-align: left;
+  }
+.foto{
+  margin-top:10%;
+  border-radius: 10px;
+  box-shadow:  0 0 15px #001c1b;
+}  
+
+.biografy{
+    margin: 20% 10%;
+    display: block;
+    justify-content: center;
+}
+.titulo{
+    color: #fcfcfc;
+    font-weight: bolder;   
+}
+.parrafo{
+    margin:auto 10%;
+}
+
+.boton{
+    border: 1px solid #ffccff;
+    color: #fcfcfc;
+    font-weight: bold;
+    background: none;
+    margin-top: 5%;
+    padding: 2%;
+}
+.boton:hover {
+    background-color: #fcfcfc;
+    border: 1px solid #001c1b;
+    color: #001c1b;
+  }
+
+  /* @media (max-width: 1000px) {
+  .SplitPane {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  .SplitPane-left {
+      float: left;
+      width: 100%;
+      height: 50%;
+  }
+  .SplitPane-right {
+    float: left;
+    width: 100%;
+    height: 50%;
+    color: #0b4242;
+  }
+} */
