@@ -21,6 +21,7 @@
     padding: 1%;
     /* background-image: url('./../../dark-green-glow-29241-1920x1080\(1\).jpg'); */
     text-shadow: 5px 5px 5px #000;
+    text-decoration: none;
 
 }
 .about {
@@ -32,4 +33,9 @@
 }
 .contact {
     margin-right: 5%;
+}
+
+.about:hover, .proyect:hover, .contact:hover{
+    font-weight: bolder;
+    border-bottom: 2px solid white;
 }

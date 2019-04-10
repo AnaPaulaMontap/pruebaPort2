@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite|Viga');
 
   .SplitPane {
     display: flex;
@@ -9,48 +10,68 @@
   
   .SplitPane-left {
     float: left;
-    width: 40%;
+    width: 30%;
     text-align: right;
   }
   
   .SplitPane-right {
     float: left;
-    width: 60%;
+    width: 70%;
     color: #ffccff;
     text-align: left;
   }
 .foto{
-  margin-top:10%;
+  margin-top:15%;
   border-radius: 10px;
   box-shadow:  0 0 15px #001c1b;
 }  
 
 .biografy{
-    margin: 20% 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6%;
     display: block;
     justify-content: center;
 }
 .titulo{
     color: #fcfcfc;
-    font-weight: bolder;   
+    font-weight: bolder;
+    font-family: 'Special Elite', cursive;
+       
 }
+
 .parrafo{
-    margin:auto 10%;
-}
+    text-indent: 2em; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: justify;
+    font-weight: 500
+  }
 
 .boton{
     border: 1px solid #ffccff;
     color: #fcfcfc;
-    font-weight: bold;
     background: none;
-    margin-top: 5%;
     padding: 2%;
+    text-decoration: none;
 }
 .boton:hover {
     background-color: #fcfcfc;
     border: 1px solid #001c1b;
     color: #001c1b;
   }
+.icono{
+  font-size: 6vmin;
+  margin: 2%;
+}
+.iconoNodeGit{
+  font-size: 8vmin;
+  margin: 2%;
+}
+
+
+
 
   /* @media (max-width: 1000px) {
   .SplitPane {

@@ -81,7 +81,7 @@
 .selector:hover,
 .selector.active {
 		background: white;
-		opacity: 0.9;
+		opacity: 1;
 }
 
 /* section.wrapper {
@@ -94,7 +94,7 @@
 aside.panel {
 	width: 40vw;
 	height: 100%;
-	opacity: 0.9;
+	opacity: 1;
 	/* color: #fff; */
 	box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
 	transition: background 500ms ease-in-out;
@@ -113,6 +113,9 @@ h2.panel-header,
 		font-size: 2.5rem;
 		text-transform: capitalize;
 		color: #fff;
+		font-family: 'Special Elite', cursive;
+		font-weight: bolder;
+		text-align: center;
 	}
 
 	p.panel-info {

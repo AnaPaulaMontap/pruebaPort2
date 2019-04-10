@@ -8,13 +8,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 8vmin;
+  font-size: 9vmin;
 }
 
   .text{
     text-align: center;
-    display: inline-block;  
-    
+    display: inline-block;     
     font-family: 'Special Elite', cursive;
     color: #fcfcfc;    
   }
@@ -46,12 +45,12 @@
   }
   
   .text__first-bg{
-    background-color: #fcfcfc;
+    background-color:  #204e4a;
    
   }
   
   .text__second-bg{
-    background-color: #fcfcfc;
+    background-color: #ecbf3a;
     
   }
   
