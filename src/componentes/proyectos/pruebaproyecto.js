@@ -13,10 +13,7 @@ class Proyectos extends React.Component {
 			wrapperStyle: {
 			backgroundImage: `url('${this.props.data[0].img}')`,
 			backgroundsize: 'cover'
-			},
-			backStyle: {
-				backgroundImage: `url('${this.props.data[0].imgDif}')`,
-			},
+			}
 		};
        
 	}
@@ -26,10 +23,7 @@ class Proyectos extends React.Component {
 			wrapperStyle: {
 				background: `url('${this.props.data[id].img}')`,
 				backgroundsize: 'cover'
-			},
-			backStyle: {
-				backgroundImage: `url('${this.props.data[id].imgDif}')`,
-			},
+			}
 		});
 	}
 	_buttonColour(id) {
@@ -49,7 +43,7 @@ class Proyectos extends React.Component {
 	}
 	render() {
 		return (
-			<section className="wrapper" style={this.state.backStyle}>
+			<section className="wrapper">
 				<Selectors 
 					data={this.props.data}
 					activeID={this.state.activeID}

@@ -67,8 +67,14 @@
 	width: 50%;
 	height: 70%;
 	background-size: cover;
+	margin-top:15%;
+  	border-radius: 10px;
+  	box-shadow: 0 0 15px #001c1b;
 }
 .selector {
+	float: left;
+    width: 30%;
+    text-align: right;
 	border: 1px solid #fff;
 	width: 11px;
 	height: 11px;
@@ -84,12 +90,6 @@
 		opacity: 1;
 }
 
-/* section.wrapper {
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	transition: background-image 500ms ease-in-out;
-} */
 
 aside.panel {
 	width: 40vw;

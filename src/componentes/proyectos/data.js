@@ -5,7 +5,6 @@ const data =[{
     colour: '#fcfcfc',
     textColor: 'white',
     img: 'https://raw.githubusercontent.com/AnaPaulaMontap/portfolio/master/portfolio/src/componentes/proyectos/assert/bqueen.png',
-    imgDif:'https://raw.githubusercontent.com/AnaPaulaMontap/portfolio/master/portfolio/src/componentes/proyectos/assert/bqdif.png'
 }, {
     id: 1,
     header: 'MdLinks',
@@ -13,7 +12,6 @@ const data =[{
     colour: '#fcfcfc',
     textColor: 'white',
     img: 'https://raw.githubusercontent.com/AnaPaulaMontap/portfolio/master/portfolio/src/componentes/proyectos/assert/mdlinks.jpg',
-    imgDif: 'https://raw.githubusercontent.com/AnaPaulaMontap/portfolio/master/portfolio/src/componentes/proyectos/assert/mddif.png'
 }, {
     id: 2,
     header: 'Happy with Allergies',
@@ -21,7 +19,6 @@ const data =[{
     colour: '#fcfcfc',
     textColor: 'white',
     img:  'https://raw.githubusercontent.com/AnaPaulaMontap/portfolio/master/portfolio/src/componentes/proyectos/assert/redsocial.png',
-    imgDif:'https://raw.githubusercontent.com/AnaPaulaMontap/portfolio/master/portfolio/src/componentes/proyectos/assert/reddif.png'
 }, {
     id: 3,
     header: 'PopCorn Nights',
@@ -29,7 +26,6 @@ const data =[{
     colour: '#fcfcfc',
     textColor: 'white',
     img:'https://raw.githubusercontent.com/AnaPaulaMontap/portfolio/master/portfolio/src/componentes/proyectos/assert/peliculas.png',
-    imgDif:'https://raw.githubusercontent.com/AnaPaulaMontap/portfolio/master/portfolio/src/componentes/proyectos/assert/pelidif.png'
 }, {
     id: 4,
     header: 'PokeInfo',

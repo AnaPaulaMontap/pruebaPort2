@@ -5,9 +5,8 @@ import PagPrincipal from './componentes/pagPrincipal/pagPrincipal'
 import Navbar from './componentes/navbar/navbar'
 import SobreMi from './componentes/sobremi/sobremi'
 import Proyectos from './componentes/proyectos/pruebaproyecto'
-//import Contacto from './componentes/contact/contacto'
+import Contacto from './componentes/contact/contacto'
 import data from './componentes/proyectos/data'
-import TimelineSequence from './componentes/sobremi/pruebaanimación'
 
 
 class App extends Component {
@@ -20,7 +19,7 @@ class App extends Component {
           <Route exact path='/' component={PagPrincipal} />
           <Route path='/proyectos' render={() => <Proyectos data={data}/>} />          
           <Route path='/sobremi' component={SobreMi} />   
-          <Route path='/contacto' component={TimelineSequence} />                       
+          <Route path='/contacto' component={Contacto} />                       
           <Redirect path="/" to="/"></Redirect>      
         </Switch>
       </div>
