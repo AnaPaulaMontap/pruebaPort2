@@ -31,13 +31,19 @@
     margin-right: 10%;
     margin-top: 6%;
     display: block;
-    justify-content: center;
 }
-.titulo{
+.titulo,.skills{
     color: #fcfcfc;
     font-weight: bolder;
     font-family: 'Special Elite', cursive;
+    margin-bottom: auto
        
+}
+.titulo{
+  font-size: 10vmin;
+}
+.skills{
+  text-align: center;
 }
 
 .parrafo{
@@ -53,8 +59,10 @@
     border: 1px solid #ffccff;
     color: #fcfcfc;
     background: none;
-    padding: 2%;
+    position: absolute;
+    padding: 1%; 
     text-decoration: none;
+    text-align: center;
 }
 .boton:hover {
     background-color: #fcfcfc;
@@ -62,13 +70,30 @@
     color: #001c1b;
   }
 .icono{
-  font-size: 6vmin;
-  margin: 2%;
+  font-size: 7vmin;
+  margin:auto 2%;
 }
 .iconoNodeGit{
-  font-size: 8vmin;
-  margin: 2%;
+  font-size: 10vmin;
+  margin: auto 2%;
 }
+.icons{
+  margin-bottom: 2%;
+  text-align: center;
+}
+.first-bg{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right:  0;
+  top: 0;  
+  z-index: 100;
+  transform-origin: right;
+  transform: scaleX(0);
+  background-color:  #204e4a;
+}
+
 
 
 
