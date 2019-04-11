@@ -5,6 +5,7 @@ import  './pruebaproyectos.css';
 
 
 
+
 class Proyectos extends React.Component {
 	constructor(props) {
 		super(props);
@@ -13,17 +14,20 @@ class Proyectos extends React.Component {
 			wrapperStyle: {
 			backgroundImage: `url('${this.props.data[0].img}')`,
 			backgroundsize: 'cover'
-			}
+			},
+			images: this.props.data[0].img
+
 		};
-       
 	}
+	
 	_changeActive(id) {
 		this.setState({
 			activeID: id,
 			wrapperStyle: {
 				background: `url('${this.props.data[id].img}')`,
 				backgroundsize: 'cover'
-			}
+			},
+			images: this.props.data[id].img
 		});
 	}
 	_buttonColour(id) {
@@ -42,20 +46,20 @@ class Proyectos extends React.Component {
 		}
 	}
 	render() {
-		return (
-			<section className="wrapper">
+		return (					
+			<section className="wrapper">			
 				<Selectors 
 					data={this.props.data}
 					activeID={this.state.activeID}
-					_changeActive={this._changeActive.bind(this)}
+					_changeActive={this._changeActive.bind(this)}					
 				/>
-				<div className="hola" style={this.state.wrapperStyle}></div>
 				<Panel 
 					data={this.props.data[this.state.activeID]}
 					_buttonColour={this._buttonColour.bind(this)}
+					images={this.state.images}
 				/>
 			
-			</section>
+			</section>			
 		);
 	}
 }

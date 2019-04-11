@@ -30,9 +30,9 @@ class SobreMi extends Component{
     
   render (){
     return (
-      <div className="SplitPane" ref={ div => this.content = div }>
+      <div className="SplitPane">
          <span className="first-bg" ref={ span => this.firstBg = span}></span> 
-        <div className="SplitPane-left" >
+        <div className="SplitPane-left" ref={ div => this.content = div }>
           <img alt="mifoto" src={yo} className="foto"ref={ img => this.feature = img }/> 
         </div>
         <div className="SplitPane-right">

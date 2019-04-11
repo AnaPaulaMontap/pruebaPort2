@@ -23,8 +23,7 @@ class Selectors extends React.Component {
 						activeID={this.props.activeID}
 					/>
 				)}
-				
-			</div>
+			</div>     	       
 		);
 	}
 }

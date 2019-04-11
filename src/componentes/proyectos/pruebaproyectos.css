@@ -47,11 +47,12 @@
 
 .selectors {
 	position: absolute;
+	bottom: 0;
 	top: 0;
-	left: 0;
-	width: 30px;
-	background: rgba(0, 0, 0, 0.2);
-	height: 100%;
+	right: 0;
+	width: 40px;
+	/* background: rgba(0, 0, 0, 0.2); */
+	/* height: 100%; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -59,29 +60,15 @@
 	z-index: 1;
 	
 }
-.hola{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	margin:  5% 5%;
-	width: 50%;
-	height: 70%;
-	background-size: cover;
-	margin-top:15%;
-  	border-radius: 10px;
-  	box-shadow: 0 0 15px #001c1b;
-}
+
 .selector {
-	float: left;
-    width: 30%;
-    text-align: right;
 	border: 1px solid #fff;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	border-radius: 50%;
-	margin: 5px 0;
-	cursor: pointer;
+	margin: 5px auto;
 	transition: background .3s ease-in-out, opacity .3s ease-in-out;
+	background: rgba(0, 0, 0, 0.2);
 	
 }
 .selector:hover,
@@ -90,18 +77,37 @@
 		opacity: 1;
 }
 
-
-aside.panel {
-	width: 40vw;
+.panel-left {
+    float: left;
+	width: 40%;
 	height: 100%;
-	opacity: 1;
-	/* color: #fff; */
+	text-align: right;	
 	box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
 	transition: background 500ms ease-in-out;
 	background-image: url('./../../dark-green-glow-29241-1920x1080\(1\).jpg');
+  }
+  
+.panel-right {
+    float: left;
+	width: 60%;
+	height: 100%;
+    color: #ffccff;
+    text-align: left;
+  }
 
-	
+.panel {
+	width: 100%;
+	height: 100%;	
 }
+
+.imagenPanel{
+	width: 80%;
+	height: 70%;
+	margin: 10%;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #001c1b;
+}
+
 h2.panel-header,
 	p.panel-info {
 		margin: 0;
