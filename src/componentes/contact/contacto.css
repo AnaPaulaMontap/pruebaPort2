@@ -1,5 +1,29 @@
 .contactarse{
     color: #fcfcfc;
     display: block;
-    margin: 10% 10%;
+    margin: 10% 10%;    
+    text-align: center;
+}
+.icon, .iconFile{
+    margin: 5%;
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+.icon{
+    font-size: 10vmin;    
+}
+.iconFile{
+    font-size: 9vmin;
+}
+
+.textoContact{
+    font-size: 5vmin;
+}
+
+.footer{
+    margin-top: 10%;
+    margin-bottom: auto;
+    color: #fcfcfc;   
+    text-align: center;
 }

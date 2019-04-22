@@ -23,7 +23,7 @@ class SobreMi extends Component{
             .to(this.firstBg, 0.5, {scaleX:0})
             .set(this.content, { autoAlpha: 1 })
             .from(this.feature, 0.5, { scale: .5, autoAlpha: 0 }, "feature")
-            .from(this.description, 0.5, { left: 1200, autoAlpha: 0 }, "feature+=0.25")
+            .from(this.description, 0.5, { scale: .5, autoAlpha: 0 }, "feature+=0.25")
             
 			
 	}
@@ -31,7 +31,7 @@ class SobreMi extends Component{
   render (){
     return (
       <div className="SplitPane">
-         <span className="first-bg" ref={ span => this.firstBg = span}></span> 
+        <span className="first-bg" ref={ span => this.firstBg = span}></span> 
         <div className="SplitPane-left" ref={ div => this.content = div }>
           <img alt="mifoto" src={yo} className="foto"ref={ img => this.feature = img }/> 
         </div>

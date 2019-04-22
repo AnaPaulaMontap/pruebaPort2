@@ -73,12 +73,12 @@
 }
 .selector:hover,
 .selector.active {
-		background: white;
+		background: #fff;		
 		opacity: 1;
 }
 
 .panel-left {
-    float: left;
+  float: left;
 	width: 40%;
 	height: 100%;
 	text-align: right;	
@@ -88,11 +88,11 @@
   }
   
 .panel-right {
-    float: left;
+  float: left;
 	width: 60%;
 	height: 100%;
-    color: #ffccff;
-    text-align: left;
+  color: #ffccff;
+  text-align: left;
   }
 
 .panel {
@@ -105,9 +105,21 @@
 	height: 70%;
 	margin: 10%;
 	border-radius: 10px;
-	box-shadow: 0 0 15px #001c1b;
+	box-shadow: 1px 1px 15px #001c1b;
 }
 
+.panelfirst-bg{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right:  0;
+  bottom: 0;  
+  z-index: 1000;
+  transform-origin: right;
+  transform: scaleX(0);
+  background-color:  #204e4a;
+}
 h2.panel-header,
 	p.panel-info {
 		margin: 0;
@@ -145,6 +157,7 @@ h2.panel-header,
 	}
 	button.panel-button:hover {
 		box-shadow: inset 0 0 1.5em 1.5em #fff;
+		color: #001c1b
 	}
 	button.panel-button:focus {
 		outline: none;

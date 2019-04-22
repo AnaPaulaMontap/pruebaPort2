@@ -13,8 +13,8 @@ class Panel extends React.Component {
 	}
 	componentDidMount(){
 		this.logoTl
-				.to(this.firstBg, 0.5, {scaleX:1})   
-				.to(this.firstBg, 0.5, {scaleX:0})
+				.to(this.firstBg, 0.6, {scaleX:1})   
+				.to(this.firstBg, 0.6, {scaleX:0})
 				.from(this.content, 0.5, { autoAlpha: 0 })
 				.from(this.feature, 0.5, { scale: 0.5, autoAlpha: 0}, "feature")
 				
@@ -24,7 +24,7 @@ class Panel extends React.Component {
 		console.log(this.props)
 		return (						
 			<aside className="panel">	
-			<span className="first-bg" ref={ span => this.firstBg = span}></span> 		
+			<span className="panelfirst-bg" ref={ span => this.firstBg = span}></span> 		
 		   		<div className="panel-left" ref={ div => this.content = div }>		   
 				<h2 className="panel-header">{this.props.data.header}</h2>
 				<p className="panel-info">{this.props.data.body}</p>
