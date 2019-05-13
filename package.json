@@ -2,6 +2,7 @@
   "name": "react-smooth-scrolling",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anapaulamontap.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
@@ -17,6 +18,8 @@
     "react-scripts": "2.0.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

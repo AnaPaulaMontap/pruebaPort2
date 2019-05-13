@@ -5,6 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpenText, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { TimelineLite} from "gsap";
+import CV from './Cv.- AnaPaulaMonsalveTapia(1).pdf'
 
 library.add(fab, faEnvelopeOpenText , faFileDownload)
 
@@ -28,17 +29,17 @@ class Contacto extends Component{
 		}
     render (){
     return(  
-      <div>  
-       <div className="contactarse">  
-       <span className="panelfirst-bg" ref={ span => this.firstBg = span}></span> 
+      <div className="panelContact">  
+      <span className="panelFirstBg" ref={ span => this.firstBg = span}></span> 
+       <div className="contactarse"  ref={ div => this.content = div }>         
            <h2 className="titulo">Contacto</h2>     
-           <p className="textoContact">Para seguir conociendo mi trabajo ó contactarse conmigo</p>            
+           <p className="textoContact" ref={ p => this.feature = p }>Para seguir conociendo mi trabajo ó contactarse conmigo</p>            
            <a href="https://github.com/AnaPaulaMontap"  className="icon"><FontAwesomeIcon icon={['fab', 'github-square']}/></a>
            <a href="https://www.linkedin.com/in/anapaulamonsalve"  className="icon"><FontAwesomeIcon icon={['fab', 'linkedin']}/></a>
            <a href="mailto:anapaula.monsalvet@gmail.com" className="iconFile"><FontAwesomeIcon  icon='envelope-open-text'/></a>
-           <a href="##" download = "CV_AnaPaulaMontap "className="iconFile"><FontAwesomeIcon  icon='file-download'/></a>
+           <a href={CV} download = "CV_AnaPaulaMontap "className="iconFile"><FontAwesomeIcon  icon='file-download'/></a>
        </div>
-       <div className="footer">
+       <div className="footer" ref={ div => this.content = div }>
         <span>AnaPaulaMontap © - 2019 - Laboratoria Chile</span>
         </div>
     </div> 
