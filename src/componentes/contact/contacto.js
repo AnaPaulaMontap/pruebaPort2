@@ -29,17 +29,17 @@ class Contacto extends Component{
 		}
     render (){
     return(  
-      <div className="panelContact">  
+      <div className="panelContact" ref={ div => this.content = div }>  
       <span className="panelFirstBg" ref={ span => this.firstBg = span}></span> 
-       <div className="contactarse"  ref={ div => this.content = div }>         
+       <div className="contactarse"  ref={ div => this.feature = div }>         
            <h2 className="titulo">Contacto</h2>     
-           <p className="textoContact" ref={ p => this.feature = p }>Para seguir conociendo mi trabajo ó contactarse conmigo</p>            
+           <p className="textoContact" >Para seguir conociendo mi trabajo ó contactarse conmigo</p>            
            <a href="https://github.com/AnaPaulaMontap"  className="icon"><FontAwesomeIcon icon={['fab', 'github-square']}/></a>
            <a href="https://www.linkedin.com/in/anapaulamonsalve"  className="icon"><FontAwesomeIcon icon={['fab', 'linkedin']}/></a>
            <a href="mailto:anapaula.monsalvet@gmail.com" className="iconFile"><FontAwesomeIcon  icon='envelope-open-text'/></a>
            <a href={CV} download = "CV_AnaPaulaMontap "className="iconFile"><FontAwesomeIcon  icon='file-download'/></a>
        </div>
-       <div className="footer" ref={ div => this.content = div }>
+       <div className="footer">
         <span>AnaPaulaMontap © - 2019 - Laboratoria Chile</span>
         </div>
     </div> 
